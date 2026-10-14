@@ -1,0 +1,16 @@
+{
+  "name": "tracker",
+  "version": "1.0.0",
+  "description": "CausalFunnel browser tracking SDK",
+  "main": "dist/tracker.js",
+  "scripts": {
+    "build": "node build.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2",
+    "jsdom": "^25.0.1",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "causalfunnel-analytics",
+  "version": "1.0.0",
+  "description": "Lightweight analytics platform for tracking user interactions",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "tracker"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "start:frontend": "npm run start --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:tracker": "npm run build --workspace=tracker",
+    "test:backend": "npm run test --workspace=backend",
+    "test:tracker": "npm run test --workspace=tracker",
+    "test": "npm run test:backend && npm run test:tracker"
+  }
+}
